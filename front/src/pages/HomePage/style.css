@@ -1,0 +1,164 @@
+  .books-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 3rem;
+  }
+
+  .books-page h1 {
+    text-align: center;
+    color: #444;
+  }
+  
+  .new-book {
+    width: 75%;
+    max-width: 900px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .new-book div {
+    margin-bottom: 15px;
+  }
+  
+  .new-book label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .new-book input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .new-book button {
+    width: 100%;
+    padding: 10px;
+    background-color: #5a67d8;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .new-book button:hover {
+    background-color: #434190;
+  }
+  
+  .books-page table {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+
+  .books-page thead {
+      background-color: #5a67d8;
+      color: #fff;
+  }
+
+  .books-page th, .books-page td {
+      padding: 1rem;
+      text-align: center;
+      border-bottom: 1px solid #ddd;
+      word-wrap: break-word;
+  }
+
+  .books-page tbody tr:hover {
+      background-color: #f4f4f9;
+  }
+
+  .books-page th {
+      text-transform: uppercase;
+      font-size: 14px;
+  }
+
+  .books-page td {
+      font-size: 14px;
+  }
+
+  .books-page tbody {
+      max-height: 50vh;
+      overflow-y: auto;
+      display: block;
+  }
+
+  .books-page thead tr, .books-page tbody tr {
+      display: table;
+      width: 100%;
+      table-layout: fixed;
+  }
+
+  .books-page table ::-webkit-scrollbar{
+    display: none;
+  }
+
+  .books-page td button {
+    width: 100%;
+    padding: 12px;
+    background-color: #5a67d8;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+
+  .books-page td .delButton{
+    background-color: #e53e3e;
+    margin-top: 0.25rem;
+  }
+
+  .books-page td .updtButton{
+    background-color: #38a169;
+    margin-bottom: 0.25rem;
+  }
+
+  .books-page td .delButton:hover{
+    background-color: #c53030;
+  }
+
+  .books-page td .updtButton:hover{
+    background-color: #2f855a;
+  }
+
+  .books-page td button:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(90, 103, 216, 0.5);
+  }
+
+  .books-page td button:disabled {
+    background-color: #ddd;
+    color: #aaa;
+    cursor: not-allowed;
+    transform: none;
+  }
+
+  .books-page td button.small {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .books-page td button.large {
+    padding: 16px;
+    font-size: 18px;
+  }
+
+  @media screen and (max-width: 480px) {
+    .books-page td button {
+      font-size: 12px;
+      padding: 8px;
+    }
+  }
